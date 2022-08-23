@@ -1,13 +1,89 @@
-import { Fragment } from "react/cjs/react.production.min";
+import Image from "next/image";
+import { Fragment } from "react";
+import logo from '../../public/images/logo.png'
+import style from './login.module.css'
 
 function Login() {
     return (
         <Fragment>
-            <div className="container mx-auto">
+            {/* <div className="container mx-auto">
                 <div className="columns-2">
-
+                    <div className="w-full">
+                        logo
+                    </div>
+                    <div className="w-full">
+                        form
+                    </div>
                 </div>
-            </div>
+            </div> */}
+            <section className="h-screen">
+                <div className="container px-6 py-12 h-full">
+                    <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
+                        <div className="md:w-8/12 lg:w-6/12 mb-12 md:mb-0">
+                            <div className="flex flex-col">
+                                <div className="flex justify-center my-2">
+                                    <Image src={logo} />
+                                </div>
+                                <div className="flex justify-center my-2">
+                                    <h1>
+                                        <b>Hệ thống quản lý lưu trữ ECM</b>
+                                    </h1>
+                                </div>
+                                <div className="flex justify-center my-2">
+                                    <h6 className="text-sm">
+                                        Quản lý lưu trữ, thống kê tài liệu (Hóa đơn điện tử, văn bản quan trọng ......)
+                                    </h6>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="md:w-8/12 lg:w-5/12 lg:ml-10">
+                            {/* <div className="mb-6">
+                                a
+                            </div>
+                            <div className="mb-6">
+                                b
+                            </div> */}
+                            {/* <div className="flex justify-center">
+                                <div className="rounded-lg shadow-lg bg-white max-w-sm">
+                                    <div>ĐĂNG NHẬP HỆ THỐNG</div>
+                                    <div className="p-6">
+                                        <h5 className="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                                        <p className="text-gray-700 text-base mb-4">
+                                            Some quick example text to build on the card title and make up the bulk of the card's
+                                            content.
+                                        </p>
+                                        <button type="button" className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>
+                                    </div>
+                                </div>
+                            </div> */}
+
+                            <div className="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                                <div className={`flex justify-center h-14 items-center rounded-t-lg bg-indigo-700 ${style.cl_white}`}>
+                                    <span>ĐĂNG NHẬP HỆ THỐNG</span>
+                                </div>
+                                <div className="flex justify-center">
+                                    Form
+                                </div>
+                                <div className="flex justify-center">
+                                    Footer
+                                </div>
+                                {/* <div className="p-5">
+                                    <a href="#">
+                                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                                    </a>
+                                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                                    <a href="#" className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Read more
+                                        <svg aria-hidden="true" className="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                    </a>
+                                </div> */}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
         </Fragment>
         // <section className="h-screen">
         //     <div className="container px-6 py-12 h-full">
